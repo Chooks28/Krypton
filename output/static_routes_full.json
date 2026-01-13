@@ -1,0 +1,5302 @@
+[
+    {
+        "namespace": "bbpress/v1",
+        "route": "/forums",
+        "methods": "GET"
+    },
+    {
+        "namespace": "bbpress/v1",
+        "route": "/topics",
+        "methods": "GET"
+    },
+    {
+        "namespace": "bbpress/v1",
+        "route": "/replies",
+        "methods": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/key",
+        "methods": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/key",
+        "methods": "POST"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/key",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/key",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/settings/",
+        "methods": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/settings/",
+        "methods": "POST"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/settings/",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/settings/",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats",
+        "methods": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats/{interval}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats/{interval}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats/{interval}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats/{interval}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/alert",
+        "methods": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/alert",
+        "methods": "POST"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/alert",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/alert",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/webhook",
+        "methods": "POST"
+    },
+    {
+        "namespace": "give/v1",
+        "route": "/promotions/free-addon-modal/complete",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "give/v1",
+        "route": "/promotions/free-addon-modal/complete",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "admin/forms/migrate/{id}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "admin/forms/transfer",
+        "methods": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-migration",
+        "methods": "GET"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-migration",
+        "methods": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-migration",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-migration",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-batch-migration",
+        "methods": "GET"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-batch-migration",
+        "methods": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-batch-migration",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-batch-migration",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/reschedule-failed-actions",
+        "methods": "GET"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/reschedule-failed-actions",
+        "methods": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/reschedule-failed-actions",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/reschedule-failed-actions",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/rollback-migration",
+        "methods": "GET"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/rollback-migration",
+        "methods": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/rollback-migration",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/rollback-migration",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "tribe_events/v2",
+        "route": "/{key}/sysinfo/",
+        "methods": "GET"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "elementor-ai/v1",
+        "route": "permissions",
+        "methods": "GET"
+    },
+    {
+        "namespace": "elementor-ai/v1",
+        "route": "permissions",
+        "methods": "POST"
+    },
+    {
+        "namespace": "elementor-ai/v1",
+        "route": "permissions",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "elementor-ai/v1",
+        "route": "permissions",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "elementor/v1/documents",
+        "route": "/{id}/media/import",
+        "methods": "POST"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/cache",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "woocommerce-email-editor/v1",
+        "route": "/send_preview_email",
+        "methods": "POST"
+    },
+    {
+        "namespace": "woocommerce-email-editor/v1",
+        "route": "/get_personalization_tags",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/create-order",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/featured",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wc/v1",
+        "route": "/marketplace/product-preview",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/refresh",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/connect",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/activate-plugin",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/disconnect",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/activate",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/install-url",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_xmlrpc_error",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/confirm-safe-mode",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/confirm-safe-mode",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "identity-crisis/migrate",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "identity-crisis/migrate",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/start-fresh",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/start-fresh",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/idc-url-validation",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/url-secret",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/compare-url-secret",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/compare-url-secret",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_registration",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_registration",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_authorize",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_authorize",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_provision",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_provision",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_register",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_register",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_connect",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_connect",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/check",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/user",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/user",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/data",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/plugins",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/reconnect",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/reconnect",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/register",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/register",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/authorize_url",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/owner",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/owner",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/heartbeat/data",
+        "methods": "GET"
+    },
+    {
+        "namespace": "monsterinsights/v1",
+        "route": "/feedback",
+        "methods": "POST"
+    },
+    {
+        "namespace": "monsterinsights/v1",
+        "route": "/popular-posts/themes/{type}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "monsterinsights/v1",
+        "route": "/terms/{slug}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "monsterinsights/v1",
+        "route": "/taxonomy/{slug}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/get",
+        "methods": "GET"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/delete",
+        "methods": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/update",
+        "methods": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/restore",
+        "methods": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/handle-extra",
+        "methods": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "export",
+        "methods": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "download-all",
+        "methods": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "delete-download-file",
+        "methods": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "set-submissions-settings",
+        "methods": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "get-submissions-settings",
+        "methods": "GET"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "email-action",
+        "methods": "POST"
+    },
+    {
+        "namespace": "nf-be-data",
+        "route": "store",
+        "methods": "POST"
+    },
+    {
+        "namespace": "ninja-forms-views",
+        "route": "forms",
+        "methods": "GET"
+    },
+    {
+        "namespace": "ninja-forms-views",
+        "route": "forms/{id}/fields",
+        "methods": "GET"
+    },
+    {
+        "namespace": "ninja-forms-views",
+        "route": "forms/{id}/submissions",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan/issues",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan/issue",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan/issue",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/config",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/config",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/config",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/disconnect",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/disconnect",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/premium-connect",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/premium-connect",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/authenticate",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/authenticate",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/authenticate-premium",
+        "methods": "POST"
+    },
+    {
+        "namespace": "media-ids/v1",
+        "route": "/get-all-media-ids",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/recipe",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/recipe/{id}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/recipe/bulk",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/dashboard/analytics",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/trash",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/trash/bulk",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/modal/suggest",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/modal/ingredient/parse",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/list",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/template",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/template",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/template",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/template/preview",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/save_image",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/feedback",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/post_summary/{id}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/preview",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/preview/{id}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/sanitize",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/changelog",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/revision",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/revision/bulk",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/revision/{id}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/setting",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/setting",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy/merge",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy/clone",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy/label",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy/bulk",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/analytics",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/analytics/{id}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/analytics/sync",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomies",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/custom-taxonomies",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/rating",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/rating/bulk",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/analytics",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/analytics/bulk",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/notice",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/{id}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/{id}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/recipe/{id}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/recipe/{id}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/comment/{id}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/comment/{id}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/comment/{id}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/integrations/instacart",
+        "methods": "POST"
+    },
+    {
+        "namespace": "tribe_events/v2",
+        "route": "/{key}/sysinfo/",
+        "methods": "GET"
+    },
+    {
+        "namespace": "tasty-recipes-lite/v1",
+        "route": "/usage-consent",
+        "methods": "POST"
+    },
+    {
+        "namespace": "tasty-recipes/v1",
+        "route": "/recipe-explorer/create",
+        "methods": "POST"
+    },
+    {
+        "namespace": "tasty-recipes/v1",
+        "route": "/recipe-explorer/recipe/{id}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "tasty-recipes/v1",
+        "route": "/recipe-explorer/delete/{id}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "tasty-recipes/v1",
+        "route": "/recipe-explorer/embed",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/hints",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/hints",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/full-sync",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/full-sync",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/status",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/health",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/health",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/settings",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/settings",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/settings",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/settings",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/now",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/now",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/checkout",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/checkout",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/close",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/close",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/unlock",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/unlock",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object-id-range",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/data-check",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/data-histogram",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/data-histogram",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/spawn-sync",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/locks",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack-protect/v1",
+        "route": "check-plan",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack-protect/v1",
+        "route": "status",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack-protect/v1",
+        "route": "clear-scan-cache",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack-protect/v1",
+        "route": "clear-scan-cache",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backup-helper-script",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backup-helper-script",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/database-object/backup",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/options/backup",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/comments/{id}/backup",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/posts/{id}/backup",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/terms/{id}/backup",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/users/{id}/backup",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/undo-event",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/orders/{id}/backup",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/preflight",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backups",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backup-capabilities",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/has-backup-plan",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/restores",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/current-purchases",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backup-promoted-product-info",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/dismissed-review-request",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/dismissed-review-request",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/size",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/schedule",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/policies",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/addon-offer",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/enqueue",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/publicize/connection-test-results",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/publicize/connections",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-product-info",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/publicize/{postId}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/connections",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/connections/{connection_id}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/connections/{connection_id}",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/connections/{connection_id}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/sync-shares/post/{id}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/sync-shares/post/{id}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/sync-shares/post/{id}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/sync-shares/post/{id}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/share-status/{post_id}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/share-status/{post_id}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/share-status/{post_id}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/share-status/{post_id}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/generate-preview-token",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/settings",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/settings",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/settings",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/settings",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf/update-rules",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf/update-rules",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/jitm",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/jitm",
+        "methods": "POST"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "site",
+        "methods": "GET"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "upload/{attachment_id}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "upload/{attachment_id}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "upload/{attachment_id}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "upload/{attachment_id}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "settings",
+        "methods": "GET"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "settings",
+        "methods": "POST"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "settings",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "settings",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "stats",
+        "methods": "GET"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "stats/featured",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_xmlrpc_error",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/confirm-safe-mode",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/confirm-safe-mode",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "identity-crisis/migrate",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "identity-crisis/migrate",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/start-fresh",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/start-fresh",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/idc-url-validation",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/url-secret",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/compare-url-secret",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/compare-url-secret",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_registration",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_registration",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_authorize",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_authorize",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_provision",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_provision",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_register",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_register",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_connect",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_connect",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/check",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/user",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/user",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/data",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/plugins",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/reconnect",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/reconnect",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/register",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/register",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/authorize_url",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/owner",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/owner",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/heartbeat/data",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/dismiss-welcome-banner",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/dismiss-welcome-banner",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "red-bubble-notifications",
+        "methods": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/update-historically-active-modules",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/update-historically-active-modules",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/",
+        "methods": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "methods": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "methods": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/purchases",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack-ai-jwt",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack-ai-jwt",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "chat/availability",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "chat/authentication",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/protect/data",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/videopress/data",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/backup/undo-event",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "jetpack-manage/data",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products",
+        "methods": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/install",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/install",
+        "methods": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/install",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/install",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/activate",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/activate",
+        "methods": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/activate",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/activate",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/deactivate",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/deactivate",
+        "methods": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/deactivate",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/deactivate",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products-ownership",
+        "methods": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products-ownership",
+        "methods": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products-ownership",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products-ownership",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/stats/blog",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/error",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/error",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/error",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/error",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/set-license",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/set-license",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "licensing/user/licenses",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "licensing/user/counts",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "licensing/user/activation-notice-dismiss",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "licensing/user/activation-notice-dismiss",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/attach-licenses",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/attach-licenses",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/feature/custom-content-types",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/goodreads/user-id",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/goodreads/user-id",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/goodreads/user-id",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/goodreads/user-id",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/blog-stats",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/blog-stats",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/blog-stats",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/blog-stats",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/service-api-keys/{service}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/service-api-keys/{service}",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/service-api-keys/{service}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/service-api-keys/{service}",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/hello",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/hello",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/hello",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/hello",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/post-types",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/post-types",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/post-types",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/post-types",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/top-posts",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/top-posts",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/top-posts",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/top-posts",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/checkGoogleDocVisibility",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/checkGoogleDocVisibility",
+        "methods": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/checkGoogleDocVisibility",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/checkGoogleDocVisibility",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack-ai-jwt",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack-ai-jwt",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "plans",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "products",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "marketing/survey",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/test",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/test-wpcom/",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/rewind",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/scan",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/url",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/tracking/settings",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/tracking/settings",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/tracking/settings",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/tracking/settings",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/features",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/products",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/purchases",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/benefits",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/activity",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/all",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/all/active",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/all/active",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}/active",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}/active",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}/data",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{service}/key/check",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{service}/key/check",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{service}/key/check",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings/{slug}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings/{slug}",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings/",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/options/{options}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/options/{options}",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/updates/plugins",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/notice/{notice}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/notice/{notice}",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins/{plugin}?)",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins/{plugin}?)",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugin/{plugin}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/widgets/{id}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify-site/{service}",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify-site/{service}/(?<keyring_id>[0-9]+)",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify-site/{service}",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify-site/{service}",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/data",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/data",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/data",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/data",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/step",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/step",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/step",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/step",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/product-suggestions",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/product-suggestions",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/product-suggestions",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/product-suggestions",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/upsell",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/upsell",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/upsell",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/upsell",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/conditional",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/conditional",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/conditional",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/conditional",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/discount",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack_crm",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack_crm",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack_crm",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack_crm",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "purchase-token",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "purchase-token",
+        "methods": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "purchase-token",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "purchase-token",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "seen-wc-connection-modal",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "seen-wc-connection-modal",
+        "methods": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/intro-offers",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/subscribers/auth",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/features/available",
+        "methods": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/features/enabled",
+        "methods": "GET"
+    },
+    {
+        "namespace": "wp-openapi/v1",
+        "route": "schema",
+        "methods": "GET"
+    },
+    {
+        "namespace": "myplugin/v1",
+        "route": "/get-nonce",
+        "methods": "GET"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "methods": "GET"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "methods": "POST"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "methods": "GET"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "methods": "POST"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "methods": "GET"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "methods": "POST"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "methods": "GET"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "methods": "POST"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "methods": "PUT"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "methods": "DELETE"
+    },
+    {
+        "namespace": "bbpress/v1",
+        "route": "/forums",
+        "method": "GET"
+    },
+    {
+        "namespace": "bbpress/v1",
+        "route": "/topics",
+        "method": "GET"
+    },
+    {
+        "namespace": "bbpress/v1",
+        "route": "/replies",
+        "method": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/key",
+        "method": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/key",
+        "method": "POST"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/key",
+        "method": "PUT"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/key",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/settings/",
+        "method": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/settings/",
+        "method": "POST"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/settings/",
+        "method": "PUT"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/settings/",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats",
+        "method": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats/{interval}",
+        "method": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats/{interval}",
+        "method": "POST"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats/{interval}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/stats/{interval}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/alert",
+        "method": "GET"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/alert",
+        "method": "POST"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/alert",
+        "method": "PUT"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/alert",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "akismet/v1",
+        "route": "/webhook",
+        "method": "POST"
+    },
+    {
+        "namespace": "give/v1",
+        "route": "/promotions/free-addon-modal/complete",
+        "method": "PUT"
+    },
+    {
+        "namespace": "give/v1",
+        "route": "/promotions/free-addon-modal/complete",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "admin/forms/migrate/{id}",
+        "method": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "admin/forms/transfer",
+        "method": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-migration",
+        "method": "GET"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-migration",
+        "method": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-migration",
+        "method": "PUT"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-migration",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-batch-migration",
+        "method": "GET"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-batch-migration",
+        "method": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-batch-migration",
+        "method": "PUT"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/run-batch-migration",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/reschedule-failed-actions",
+        "method": "GET"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/reschedule-failed-actions",
+        "method": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/reschedule-failed-actions",
+        "method": "PUT"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/reschedule-failed-actions",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/rollback-migration",
+        "method": "GET"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/rollback-migration",
+        "method": "POST"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/rollback-migration",
+        "method": "PUT"
+    },
+    {
+        "namespace": "give-api/v2",
+        "route": "migrations/rollback-migration",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "tribe_events/v2",
+        "route": "/{key}/sysinfo/",
+        "method": "GET"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "method": "GET"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "method": "POST"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "method": "GET"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "method": "POST"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/settings/{key}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "elementor-ai/v1",
+        "route": "permissions",
+        "method": "GET"
+    },
+    {
+        "namespace": "elementor-ai/v1",
+        "route": "permissions",
+        "method": "POST"
+    },
+    {
+        "namespace": "elementor-ai/v1",
+        "route": "permissions",
+        "method": "PUT"
+    },
+    {
+        "namespace": "elementor-ai/v1",
+        "route": "permissions",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "elementor/v1/documents",
+        "route": "/{id}/media/import",
+        "method": "POST"
+    },
+    {
+        "namespace": "elementor/v1",
+        "route": "/cache",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "woocommerce-email-editor/v1",
+        "route": "/send_preview_email",
+        "method": "POST"
+    },
+    {
+        "namespace": "woocommerce-email-editor/v1",
+        "route": "/get_personalization_tags",
+        "method": "GET"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/create-order",
+        "method": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/featured",
+        "method": "GET"
+    },
+    {
+        "namespace": "wc/v1",
+        "route": "/marketplace/product-preview",
+        "method": "GET"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/refresh",
+        "method": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions",
+        "method": "GET"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/connect",
+        "method": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/activate-plugin",
+        "method": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/disconnect",
+        "method": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/activate",
+        "method": "POST"
+    },
+    {
+        "namespace": "wc/v3",
+        "route": "/marketplace/subscriptions/install-url",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_xmlrpc_error",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/confirm-safe-mode",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/confirm-safe-mode",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "identity-crisis/migrate",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "identity-crisis/migrate",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/start-fresh",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/start-fresh",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/idc-url-validation",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/url-secret",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/compare-url-secret",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/compare-url-secret",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_registration",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_registration",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_authorize",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_authorize",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_provision",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_provision",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_register",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_register",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_connect",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_connect",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/check",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/user",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/user",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/data",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/plugins",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/reconnect",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/reconnect",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/register",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/register",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/authorize_url",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/owner",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/owner",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/heartbeat/data",
+        "method": "GET"
+    },
+    {
+        "namespace": "monsterinsights/v1",
+        "route": "/feedback",
+        "method": "POST"
+    },
+    {
+        "namespace": "monsterinsights/v1",
+        "route": "/popular-posts/themes/{type}",
+        "method": "GET"
+    },
+    {
+        "namespace": "monsterinsights/v1",
+        "route": "/terms/{slug}",
+        "method": "GET"
+    },
+    {
+        "namespace": "monsterinsights/v1",
+        "route": "/taxonomy/{slug}",
+        "method": "GET"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/get",
+        "method": "GET"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/delete",
+        "method": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/update",
+        "method": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/restore",
+        "method": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "submissions/handle-extra",
+        "method": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "export",
+        "method": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "download-all",
+        "method": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "delete-download-file",
+        "method": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "set-submissions-settings",
+        "method": "POST"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "get-submissions-settings",
+        "method": "GET"
+    },
+    {
+        "namespace": "ninja-forms-submissions",
+        "route": "email-action",
+        "method": "POST"
+    },
+    {
+        "namespace": "nf-be-data",
+        "route": "store",
+        "method": "POST"
+    },
+    {
+        "namespace": "ninja-forms-views",
+        "route": "forms",
+        "method": "GET"
+    },
+    {
+        "namespace": "ninja-forms-views",
+        "route": "forms/{id}/fields",
+        "method": "GET"
+    },
+    {
+        "namespace": "ninja-forms-views",
+        "route": "forms/{id}/submissions",
+        "method": "GET"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan/issues",
+        "method": "GET"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan",
+        "method": "POST"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan/issue",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/scan/issue",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/config",
+        "method": "GET"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/config",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/config",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/disconnect",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/disconnect",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/premium-connect",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/premium-connect",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/authenticate",
+        "method": "GET"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/authenticate",
+        "method": "POST"
+    },
+    {
+        "namespace": "wordfence/v1",
+        "route": "/authenticate-premium",
+        "method": "POST"
+    },
+    {
+        "namespace": "media-ids/v1",
+        "route": "/get-all-media-ids",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/recipe",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/recipe/{id}",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/recipe/bulk",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/dashboard/analytics",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/trash",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/trash/bulk",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/modal/suggest",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/modal/ingredient/parse",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/list",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/template",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/template",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/template",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/template/preview",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/save_image",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/feedback",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/post_summary/{id}",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/preview",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/preview/{id}",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/utilities/sanitize",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/changelog",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/revision",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/revision/bulk",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/revision/{id}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/setting",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/setting",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy/merge",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy/clone",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy/label",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomy/bulk",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/analytics",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/analytics/{id}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/analytics/sync",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/taxonomies",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/custom-taxonomies",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/rating",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/rating/bulk",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/analytics",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/manage/analytics/bulk",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/notice",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/{id}",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/{id}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/recipe/{id}",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/recipe/{id}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/comment/{id}",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/comment/{id}",
+        "method": "POST"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/rating/comment/{id}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wp-recipe-maker/v1",
+        "route": "/integrations/instacart",
+        "method": "POST"
+    },
+    {
+        "namespace": "tribe_events/v2",
+        "route": "/{key}/sysinfo/",
+        "method": "GET"
+    },
+    {
+        "namespace": "tasty-recipes-lite/v1",
+        "route": "/usage-consent",
+        "method": "POST"
+    },
+    {
+        "namespace": "tasty-recipes/v1",
+        "route": "/recipe-explorer/create",
+        "method": "POST"
+    },
+    {
+        "namespace": "tasty-recipes/v1",
+        "route": "/recipe-explorer/recipe/{id}",
+        "method": "GET"
+    },
+    {
+        "namespace": "tasty-recipes/v1",
+        "route": "/recipe-explorer/delete/{id}",
+        "method": "POST"
+    },
+    {
+        "namespace": "tasty-recipes/v1",
+        "route": "/recipe-explorer/embed",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/hints",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/hints",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/full-sync",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/full-sync",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/status",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/health",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/health",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/settings",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/settings",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/settings",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/settings",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/now",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/now",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/checkout",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/checkout",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/close",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/close",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/unlock",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/unlock",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/object-id-range",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/data-check",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/data-histogram",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/data-histogram",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/spawn-sync",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/sync/locks",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack-protect/v1",
+        "route": "check-plan",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack-protect/v1",
+        "route": "status",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack-protect/v1",
+        "route": "clear-scan-cache",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack-protect/v1",
+        "route": "clear-scan-cache",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backup-helper-script",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backup-helper-script",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/database-object/backup",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/options/backup",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/comments/{id}/backup",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/posts/{id}/backup",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/terms/{id}/backup",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/users/{id}/backup",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/undo-event",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/orders/{id}/backup",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/preflight",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backups",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backup-capabilities",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/has-backup-plan",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/restores",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/current-purchases",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/backup-promoted-product-info",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/dismissed-review-request",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/dismissed-review-request",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/size",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/schedule",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/policies",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/addon-offer",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/backup/enqueue",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/publicize/connection-test-results",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/publicize/connections",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-product-info",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/publicize/{postId}",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/connections",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/connections/{connection_id}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/connections/{connection_id}",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/connections/{connection_id}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/sync-shares/post/{id}",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/sync-shares/post/{id}",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/sync-shares/post/{id}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/sync-shares/post/{id}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/share-status/{post_id}",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/share-status/{post_id}",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/share-status/{post_id}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social/share-status/{post_id}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/generate-preview-token",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/settings",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/settings",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/settings",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/social-image-generator/settings",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf/update-rules",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/waf/update-rules",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/jitm",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/jitm",
+        "method": "POST"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "site",
+        "method": "GET"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "upload/{attachment_id}",
+        "method": "GET"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "upload/{attachment_id}",
+        "method": "POST"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "upload/{attachment_id}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "upload/{attachment_id}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "settings",
+        "method": "GET"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "settings",
+        "method": "POST"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "settings",
+        "method": "PUT"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "settings",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "stats",
+        "method": "GET"
+    },
+    {
+        "namespace": "videopress/v1",
+        "route": "stats/featured",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_xmlrpc_error",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/confirm-safe-mode",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/confirm-safe-mode",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "identity-crisis/migrate",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "identity-crisis/migrate",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/start-fresh",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/start-fresh",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/idc-url-validation",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/url-secret",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/compare-url-secret",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/identity-crisis/compare-url-secret",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_registration",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify_registration",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_authorize",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_authorize",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_provision",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_provision",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_register",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_register",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_connect",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/remote_connect",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/check",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/user",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/user",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/data",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/plugins",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/reconnect",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/reconnect",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/register",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/register",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/authorize_url",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/user-token",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/owner",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/owner",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/heartbeat/data",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/dismiss-welcome-banner",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/dismiss-welcome-banner",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "red-bubble-notifications",
+        "method": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/update-historically-active-modules",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/update-historically-active-modules",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/",
+        "method": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "method": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "method": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/recommendations/evaluation/result/",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/purchases",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack-ai-jwt",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack-ai-jwt",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "chat/availability",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "chat/authentication",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/protect/data",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/videopress/data",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "/site/backup/undo-event",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "jetpack-manage/data",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products",
+        "method": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/install",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/install",
+        "method": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/install",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/install",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/activate",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/activate",
+        "method": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/activate",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/activate",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/deactivate",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/deactivate",
+        "method": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/deactivate",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products/deactivate",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products-ownership",
+        "method": "GET"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products-ownership",
+        "method": "POST"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products-ownership",
+        "method": "PUT"
+    },
+    {
+        "namespace": "my-jetpack/v1",
+        "route": "site/products-ownership",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/stats/blog",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/error",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/error",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/error",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/error",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/set-license",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/set-license",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "licensing/user/licenses",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "licensing/user/counts",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "licensing/user/activation-notice-dismiss",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "licensing/user/activation-notice-dismiss",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/attach-licenses",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/licensing/attach-licenses",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/feature/custom-content-types",
+        "method": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/goodreads/user-id",
+        "method": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/goodreads/user-id",
+        "method": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/goodreads/user-id",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/goodreads/user-id",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/blog-stats",
+        "method": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/blog-stats",
+        "method": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/blog-stats",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/blog-stats",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/service-api-keys/{service}",
+        "method": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/service-api-keys/{service}",
+        "method": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/service-api-keys/{service}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/service-api-keys/{service}",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/hello",
+        "method": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/hello",
+        "method": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/hello",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/hello",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/post-types",
+        "method": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/post-types",
+        "method": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/post-types",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/post-types",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/top-posts",
+        "method": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/top-posts",
+        "method": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/top-posts",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/top-posts",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/checkGoogleDocVisibility",
+        "method": "GET"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/checkGoogleDocVisibility",
+        "method": "POST"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/checkGoogleDocVisibility",
+        "method": "PUT"
+    },
+    {
+        "namespace": "wpcom/v2",
+        "route": "/checkGoogleDocVisibility",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack-ai-jwt",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack-ai-jwt",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "plans",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "products",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "marketing/survey",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/test",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/test-wpcom/",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/rewind",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/scan",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/connection/url",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/tracking/settings",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/tracking/settings",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/tracking/settings",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/tracking/settings",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/features",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/products",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/purchases",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/benefits",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/activity",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/all",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/all/active",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/all/active",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}/active",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}/active",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{slug}/data",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{service}/key/check",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{service}/key/check",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/module/{service}/key/check",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings/{slug}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings/{slug}",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/settings/",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/options/{options}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/options/{options}",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/updates/plugins",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/notice/{notice}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/notice/{notice}",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins/{plugin}?)",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugins/{plugin}?)",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/plugin/{plugin}",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/widgets/{id}",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify-site/{service}",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify-site/{service}/(?<keyring_id>[0-9]+)",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify-site/{service}",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/verify-site/{service}",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/data",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/data",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/data",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/data",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/step",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/step",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/step",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/step",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/product-suggestions",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/product-suggestions",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/product-suggestions",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/product-suggestions",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/upsell",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/upsell",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/upsell",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/upsell",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/conditional",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/conditional",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/conditional",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/recommendations/conditional",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/site/discount",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack_crm",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack_crm",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack_crm",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "jetpack_crm",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "purchase-token",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "purchase-token",
+        "method": "POST"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "purchase-token",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "purchase-token",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "seen-wc-connection-modal",
+        "method": "PUT"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "seen-wc-connection-modal",
+        "method": "PATCH"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/intro-offers",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/subscribers/auth",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/features/available",
+        "method": "GET"
+    },
+    {
+        "namespace": "jetpack/v4",
+        "route": "/features/enabled",
+        "method": "GET"
+    },
+    {
+        "namespace": "wp-openapi/v1",
+        "route": "schema",
+        "method": "GET"
+    },
+    {
+        "namespace": "myplugin/v1",
+        "route": "/get-nonce",
+        "method": "GET"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "method": "GET"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "method": "POST"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "method": "PUT"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/embed",
+        "method": "DELETE"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "method": "GET"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "method": "POST"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "method": "PUT"
+    },
+    {
+        "namespace": "oembed/1.0",
+        "route": "/proxy",
+        "method": "DELETE"
+    }
+]

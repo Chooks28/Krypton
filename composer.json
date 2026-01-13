@@ -1,0 +1,12 @@
+{
+  "require": {
+    "nikic/php-parser": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "CMS\\": "src/CMS/",
+      "Core\\": "src/Core/",
+      "Src\\": "src/"
+    }
+  }
+}

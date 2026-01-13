@@ -1,0 +1,9 @@
+[
+
+ {
+        "namespace": "wordfence/v1",
+        "route": "/scan",
+        "method": "POST"
+    }
+    
+ ]

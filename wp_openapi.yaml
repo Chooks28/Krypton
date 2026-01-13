@@ -1,0 +1,1155 @@
+openapi: 3.1.0
+info:
+  title: WordPress REST API
+  version: 6.8.1
+servers:
+- url: http://localhost/wp-json
+paths:
+  /contact-form-7/v1:
+    get:
+      summary: Contact Form 7 base endpoint
+      parameters:
+        - name: namespace
+          in: query
+          description: ""
+          required: false
+          schema:
+            type: string
+            default: contact-form-7/v1
+        - name: context
+          in: query
+          description: ""
+          required: false
+          schema:
+            type: string
+            default: view
+      responses:
+        "200":
+          description: OK
+
+  /wc/v1:
+    get:
+      summary: WooCommerce base endpoint
+      parameters:
+        - name: namespace
+          in: query
+          description: ""
+          required: false
+          schema:
+            type: string
+            default: wc/v1
+        - name: context
+          in: query
+          description: ""
+          required: false
+          schema:
+            type: string
+            default: view
+      responses:
+        "200":
+          description: OK
+
+  //wc/v1/products:
+    get:
+      summary: List products
+      parameters:
+      - name: context
+        in: query
+        description: Scope under which the request is made; determines fields present
+          in response.
+        required: false
+        schema:
+          type: string
+          default: view
+          enum:
+          - view
+          - edit
+      - name: page
+        in: query
+        description: Current page of the collection.
+        required: false
+        schema:
+          type: integer
+          default: 1
+          minimum: 1
+      - name: per_page
+        in: query
+        description: Maximum number of items to be returned in result set.
+        required: false
+        schema:
+          type: integer
+          default: 10
+          minimum: 1
+          maximum: 100
+      - name: search
+        in: query
+        description: Limit results to those matching a string.
+        required: false
+        schema:
+          type: string
+      - name: after
+        in: query
+        description: Limit response to resources published after a given ISO8601 compliant
+          date.
+        required: false
+        schema:
+          type: string
+          format: date-time
+      - name: before
+        in: query
+        description: Limit response to resources published before a given ISO8601
+          compliant date.
+        required: false
+        schema:
+          type: string
+          format: date-time
+      - name: exclude
+        in: query
+        description: Ensure result set excludes specific IDs.
+        required: false
+        schema:
+          type: array
+          items:
+            type: integer
+      - name: include
+        in: query
+        description: Limit result set to specific ids.
+        required: false
+        schema:
+          type: array
+          items:
+            type: integer
+      - name: offset
+        in: query
+        description: Offset the result set by a specific number of items.
+        required: false
+        schema:
+          type: integer
+      - name: order
+        in: query
+        description: Order sort attribute ascending or descending.
+        required: false
+        schema:
+          type: string
+          default: desc
+          enum:
+          - asc
+          - desc
+      - name: orderby
+        in: query
+        description: Sort collection by object attribute.
+        required: false
+        schema:
+          type: string
+          default: date
+          enum:
+          - date
+          - id
+          - include
+          - title
+          - slug
+          - modified
+      - name: filter
+        in: query
+        description: Use WP Query arguments to modify the response; private query
+          vars require appropriate authorization.
+        required: false
+        schema:
+          type: object
+      - name: slug
+        in: query
+        description: Limit result set to products with a specific slug.
+        required: false
+        schema:
+          type: string
+      - name: status
+        in: query
+        description: Limit result set to products assigned a specific status.
+        required: false
+        schema:
+          type: string
+          default: any
+          enum:
+          - any
+          - future
+          - draft
+          - pending
+          - private
+          - publish
+      - name: type
+        in: query
+        description: Limit result set to products assigned a specific type.
+        required: false
+        schema:
+          type: string
+          enum:
+          - simple
+          - grouped
+          - external
+          - variable
+      - name: category
+        in: query
+        description: Limit result set to products assigned a specific category ID.
+        required: false
+        schema:
+          type: integer
+      - name: tag
+        in: query
+        description: Limit result set to products assigned a specific tag ID.
+        required: false
+        schema:
+          type: integer
+      - name: shipping_class
+        in: query
+        description: Limit result set to products assigned a specific shipping class
+          ID.
+        required: false
+        schema:
+          type: integer
+      - name: attribute
+        in: query
+        description: Limit result set to products with a specific attribute.
+        required: false
+        schema:
+          type: string
+      - name: attribute_term
+        in: query
+        description: Limit result set to products with a specific attribute term ID
+          (requires an assigned attribute).
+        required: false
+        schema:
+          type: integer
+      - name: sku
+        in: query
+        description: Limit result set to products with a specific SKU.
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/product'
+    post:
+      summary: Create a product
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/product'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/product'
+  /wc/v1/products/{id}:
+    get:
+      summary: Retrieve a product
+      parameters:
+      - name: id
+        in: path
+        description: Unique identifier for the resource.
+        required: true
+        schema: {}
+      - name: context
+        in: query
+        description: Scope under which the request is made; determines fields present
+          in response.
+        required: false
+        schema:
+          default: view
+          enum:
+          - view
+          - edit
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/product'
+    post:
+      summary: Create/update a product (duplicate behavior for POST with ID)
+      parameters:
+      - name: id
+        in: path
+        description: Unique identifier for the resource.
+        required: true
+        schema: {}
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                name:
+                  description: Product name.
+                  type: string
+                slug:
+                  description: Product slug.
+                  type: string
+                type:
+                  description: Product type.
+                  type: string
+                  enum:
+                  - simple
+                  - grouped
+                  - external
+                  - variable
+                status:
+                  description: Product status (post status).
+                  type: string
+                  enum:
+                  - draft
+                  - pending
+                  - private
+                  - publish
+                  - future
+                featured:
+                  description: Featured product.
+                  type: boolean
+                catalog_visibility:
+                  description: Catalog visibility.
+                  type: string
+                  enum:
+                  - visible
+                  - catalog
+                  - search
+                  - hidden
+                description:
+                  description: Product description.
+                  type: string
+                short_description:
+                  description: Product short description.
+                  type: string
+                sku:
+                  description: Unique identifier.
+                  type: string
+                regular_price:
+                  description: Product regular price.
+                  type: string
+                sale_price:
+                  description: Product sale price.
+                  type: string
+                date_on_sale_from:
+                  description: Start date of sale price.
+                  type: string
+                date_on_sale_to:
+                  description: End date of sale price.
+                  type: string
+                virtual:
+                  description: If the product is virtual.
+                  type: boolean
+                downloadable:
+                  description: If the product is downloadable.
+                  type: boolean
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/product'
+    put:
+      summary: Update a product
+      parameters:
+      - name: id
+        in: path
+        description: Unique identifier for the resource.
+        required: true
+        schema: {}
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                name:
+                  description: Product name.
+                  type: string
+                slug:
+                  description: Product slug.
+                  type: string
+                type:
+                  description: Product type.
+                  type: string
+                  enum:
+                  - simple
+                  - grouped
+                  - external
+                  - variable
+                status:
+                  description: Product status (post status).
+                  type: string
+                  enum:
+                  - draft
+                  - pending
+                  - private
+                  - publish
+                  - future
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/product'
+    delete:
+      summary: Delete a product
+      parameters:
+      - name: id
+        in: path
+        description: Unique identifier for the resource.
+        required: true
+        schema: {}
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                force:
+                  description: Whether to bypass trash and force deletion.
+                  type: boolean
+                  default: false
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/product'
+
+  /wc/v1/orders:
+    get:
+      summary: Retrieve orders
+      parameters:
+        - name: context
+          in: query
+          description: Scope under which the request is made; determines fields present in response.
+          required: false
+          schema:
+            default: view
+            enum: [view, edit]
+        - name: page
+          in: query
+          description: Current page of the collection.
+          required: false
+          schema:
+            default: 1
+            minimum: 1
+        - name: per_page
+          in: query
+          description: Maximum number of items to be returned in result set.
+          required: false
+          schema:
+            default: 10
+            minimum: 1
+            maximum: 100
+        - name: searchhttp://localhost/wp-json/http://localhost/wp-json/wc/v1/products/1
+          in: query
+          description: Limit results to those matching a string.
+          required: false
+          schema: {}
+        - name: after
+          in: query
+          description: Limit response to resources published after a given ISO8601 compliant date.
+          required: false
+          schema:
+            format: date-time
+        - name: before
+          in: query
+          description: Limit response to resources published before a given ISO8601 compliant date.
+          required: false
+          schema:
+            format: date-time
+        - name: exclude
+          in: query
+          description: Ensure result set excludes specific IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: include
+          in: query
+          description: Limit result set to specific IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: offset
+          in: query
+          description: Offset the result set by a specific number of items.
+          required: false
+          schema: {}
+        - name: order
+          in: query
+          description: Order sort attribute ascending or descending.
+          required: false
+          schema:
+            default: desc
+            enum: [asc, desc]
+        - name: orderby
+          in: query
+          description: Sort collection by object attribute.
+          required: false
+          schema:
+            default: date
+            enum: [date, id, include, title, slug, modified]
+        - name: filter
+          in: query
+          description: Use WP Query arguments to modify the response.
+          required: false
+          schema: {}
+        - name: status
+          in: query
+          description: Limit result set to orders assigned a specific status.
+          required: false
+          schema:
+            default: any
+            enum: [any, pending, processing, on-hold, completed, cancelled, refunded, failed, checkout-draft]
+        - name: customer
+          in: query
+          description: Limit result set to orders assigned a specific customer.
+          required: false
+          schema: {}
+        - name: product
+          in: query
+          description: Limit result set to orders assigned a specific product.
+          required: false
+          schema: {}
+        - name: dp
+          in: query
+          description: Number of decimal points to use in each resource.
+          required: false
+          schema:
+            default: 2
+      responses:
+        "200":
+          description: OK
+
+  /wc/v1/customers:
+    get:
+      summary: Retrieve customers
+      parameters:
+        - name: context
+          in: query
+          description: Scope under which the request is made; determines fields present in response.
+          required: false
+          schema:
+            default: view
+            enum: [view, edit]
+        - name: page
+          in: query
+          description: Current page of the collection.
+          required: false
+          schema:
+            default: 1
+            minimum: 1
+        - name: per_page
+          in: query
+          description: Maximum number of items to be returned in result set.
+          required: false
+          schema:
+            default: 10
+            minimum: 1
+            maximum: 100
+        - name: search
+          in: query
+          description: Limit results to those matching a string.
+          required: false
+          schema: {}
+        - name: exclude
+          in: query
+          description: Ensure result set excludes specific IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: include
+          in: query
+          description: Limit result set to specific IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: offset
+          in: query
+          description: Offset the result set by a specific number of items.
+          required: false
+          schema: {}
+        - name: order
+          in: query
+          description: Order sort attribute ascending or descending.
+          required: false
+          schema:
+            default: asc
+            enum: [asc, desc]
+        - name: orderby
+          in: query
+          description: Sort collection by object attribute.
+          required: false
+          schema:
+            default: name
+            enum: [id, include, name, registered_date]
+        - name: email
+          in: query
+          description: Limit result set to resources with a specific email.
+          required: false
+          schema:
+            format: email
+        - name: role
+          in: query
+          description: Limit result set to resources with a specific role.
+          required: false
+          schema: {}
+      responses:
+        "200":
+          description: OK
+
+  /wp/v2/comments:
+    get:
+      summary: Retrieve comments
+      parameters:
+        - name: context
+          in: query
+          description: Scope under which the request is made; determines fields present in response.
+          required: false
+          schema:
+            default: view
+            enum: [view, embed, edit]
+        - name: page
+          in: query
+          description: Current page of the collection.
+          required: false
+          schema:
+            default: 1
+            minimum: 1
+        - name: per_page
+          in: query
+          description: Maximum number of items to be returned in result set.
+          required: false
+          schema:
+            default: 10
+            minimum: 1
+            maximum: 100
+        - name: search
+          in: query
+          description: Limit results to those matching a string.
+          required: false
+          schema: {}
+        - name: after
+          in: query
+          description: Limit response to comments published after a given ISO8601 compliant date.
+          required: false
+          schema:
+            format: date-time
+        - name: author
+          in: query
+          description: Limit result set to comments assigned to specific user IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: author_exclude
+          in: query
+          description: Ensure result set excludes comments assigned to specific user IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: author_email
+          in: query
+          description: Limit result set to that from a specific author email.
+          required: false
+          schema:
+            format: email
+        - name: before
+          in: query
+          description: Limit response to comments published before a given ISO8601 compliant date.
+          required: false
+          schema:
+            format: date-time
+        - name: exclude
+          in: query
+          description: Ensure result set excludes specific IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: include
+          in: query
+          description: Limit result set to specific IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: offset
+          in: query
+          description: Offset the result set by a specific number of items.
+          required: false
+          schema: {}
+        - name: order
+          in: query
+          description: Order sort attribute ascending or descending.
+          required: false
+          schema:
+            default: desc
+            enum: [asc, desc]
+        - name: orderby
+          in: query
+          description: Sort collection by comment attribute.
+          required: false
+          schema:
+            default: date_gmt
+            enum: [date, date_gmt, id, include, post, parent, type]
+        - name: parent
+          in: query
+          description: Limit result set to comments of specific parent IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: parent_exclude
+          in: query
+          description: Ensure result set excludes specific parent IDs.
+          required: false
+          schema:
+            items:
+              type: integer
+        - name: post
+          in: query
+          description: Limit result set to comments assigned to specific post IDs.
+          required: false
+          schema: {}
+      responses:
+        "200":
+          description: OK
+
+  /yoast/v1/ai_generator/get_suggestions:
+    get:
+      summary: Get AI-generated suggestions
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                type:
+                  description: The type of suggestion requested.
+                  type: string
+                  enum:
+                    - seo-title
+                    - meta-description
+                    - product-seo-title
+                    - product-meta-description
+                    - product-taxonomy-seo-title
+                    - product-taxonomy-meta-description
+                    - taxonomy-seo-title
+                    - taxonomy-meta-description
+                prompt_content:
+                  description: The content needed by the prompt to ask for suggestions.
+                  type: string
+                focus_keyphrase:
+                  description: The focus keyphrase associated to the post.
+                  type: string
+                language:
+                  description: The language the post is written in.
+                  type: string
+                platform:
+                  description: The platform the post is intended for.
+                  type: string
+                  enum: [Google, Facebook, Twitter]
+                editor:
+                  description: The current editor.
+                  type: string
+                  enum: [classic, elementor, gutenberg]
+              required:
+                - type
+                - prompt_content
+                - focus_keyphrase
+                - language
+                - platform
+                - editor
+      responses:
+        "200":
+          description: OK
+
+  /wordfence/v1/scan:
+    post:
+      summary: Trigger a Wordfence scan
+      responses:
+        "200":
+          description: OK
+
+  /jetpack/v4/module/{slug}/active:
+    post:
+      summary: Activate or deactivate a Jetpack module
+      parameters:
+        - name: slug
+          in: path
+          description: Module slug.
+          required: true
+          schema: {}
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                active:
+                  type: boolean
+                  default: true
+              required:
+                - active
+      responses:
+        "200":
+          description: OK
+
+  /media-ids/v1/get-all-media-ids:
+    get:
+      summary: Get all media IDs
+      responses:
+        "200":
+          description: OK
+
+  /wp/v2/pages/{id}:
+    get:
+      summary: Get a page by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Unique identifier for the post.
+          schema:
+            type: integer
+        - name: context
+          in: query
+          description: Scope under which the request is made.
+          schema:
+            type: string
+            default: view
+            enum: [view, embed, edit]
+        - name: excerpt_length
+          in: query
+          description: Override the default excerpt length.
+          schema:
+            type: integer
+        - name: password
+          in: query
+          description: Password for the post if protected.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+
+  /bbpress/v1/topics:
+    get:
+      summary: List topics
+      responses:
+        "200":
+          description: OK
+
+  /buddypress/v1/xprofile/{field_id}/data/{user_id}:
+    post:
+      summary: "Add xProfile field data"
+      parameters:
+        - name: field_id
+          in: path
+          required: true
+          schema:
+            type: integer
+          description: "The ID of the field the data is from."
+        - name: user_id
+          in: path
+          required: true
+          schema:
+            type: integer
+          description: "The ID of the user the field data is from."
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                value:
+                  type: string
+                  description: "Value to set for the field"
+                  example: "My test profile value"
+      responses:
+        200:
+          description: "OK"
+
+  /tribe/events/v1/events:
+    post:
+      summary: Create an event
+      responses:
+        200:
+          description: "OK"
+
+  /give-api/v2/donor-dashboard/donations:
+    post:
+      summary: Get donor dashboard donations
+      responses:
+        200:
+          description: "OK"
+
+  /tribe/tickets/v1/commerce/free/order:
+    post:
+      summary: Create free ticket order
+      responses:
+        200:
+          description: "OK"
+
+  /popup-maker/v2/popups:
+    get:
+      summary: Create a popup
+      responses:
+        200:
+          description: "OK"
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: "object"
+              properties:
+                date:
+                  description: "The date the post was published, in the site's timezone."
+                  format: "date-time"
+                date_gmt:
+                  description: "The date the post was published, as GMT."
+                  format: "date-time"
+                slug:
+                  description: "An alphanumeric identifier for the post unique to its type."
+                  type: "string"
+                status:
+                  description: "A named status for the post."
+                  type: "string"
+                password:
+                  description: "A password to protect access to the content and excerpt."
+                  type: "string"
+                title:
+                  description: "The title for the post."
+                  type: "object"
+                content:
+                  description: "The content for the post."
+                  type: "object"
+                author:
+                  description: "The ID for the author of the post."
+                  type: "integer"
+                excerpt:
+                  description: "The excerpt for the post."
+                  type: "object"
+                template:
+                  description: "The theme file to use to display the post."
+                  type: "string"
+                settings:
+                  type: "object"
+                priority:
+                  type: "integer"
+
+  /tasty-recipes/v1/recipe-explorer/recipe/{id}:
+    get:
+      summary: Get recipe by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: "OK"
+
+  /wpjm-internal/v1/promoted-jobs/{job_id}:
+    get:
+      summary: Get promoted job information
+      parameters:
+        - name: job_id
+          in: path
+          required: true
+          schema: {}
+      responses:
+        200:
+          description: "OK"
+
+  /ngg/v1:
+    get:
+      summary: NextGEN Gallery base endpoint
+      parameters:
+        - name: namespace
+          in: query
+          required: false
+          schema:
+            default: "ngg/v1"
+        - name: context
+          in: query
+          required: false
+          schema:
+            default: "view"
+      responses:
+        200:
+          description: "OK"
+
+  /elementor/v1/send-event:
+    post:
+      summary: Send Elementor event
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: "object"
+              properties:
+                event_data:
+                  description: "All the recorded event data in JSON format"
+                  type: "object"
+              required:
+                - "event_data"
+      responses:
+        200:
+          description: "OK"
+
+  /extmedialib/v1:
+    get:
+      summary: External Media Library base endpoint
+      parameters:
+        - name: namespace
+          in: query
+          description: ""
+          required: false
+          schema:
+            default: "extmedialib/v1"
+        - name: context
+          in: query
+          description: ""
+          required: false
+          schema:
+            default: "view"
+      responses:
+        200:
+          description: "OK"
+
+  /monsterinsights/v1:
+    get:
+      summary: MonsterInsights base endpoint
+      parameters:
+        - name: namespace
+          in: query
+          description: ""
+          required: false
+          schema:
+            default: "monsterinsights/v1"
+        - name: context
+          in: query
+          description: ""
+          required: false
+          schema:
+            default: "view"
+      responses:
+        200:
+          description: "OK"
+
+  /forminator/v1/preview/polls?module_id={id}:
+    get:
+      summary: Get a poll preview by module ID
+      parameters:
+        - name: module_id
+          in: query
+          description: "Module ID of the Forminator poll"
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+
+components:
+  schemas:
+    page:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: object
+          properties:
+            rendered:
+              type: string
+        content:
+          type: object
+          properties:
+            rendered:
+              type: string
+
+    bp_xprofile_data:
+      type: object
+      properties:
+        id:
+          type: integer
+        field_id:
+          type: integer
+        user_id:
+          type: integer
+        value:
+          type: object
+          properties:
+            raw:
+              type: string
+            rendered:
+              type: string
+
+    product:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        slug:
+          type: string        
+          
+/wp/v2/course/{id}:
+    get:
+      summary: Get a course by ID
+      parameters:
+        - name: id
+          in: path
+          description: Unique identifier for the course
+          required: true
+          schema:
+            type: integer
+        - name: context
+          in: query
+          description: Scope under which the request is made
+          required: false
+          schema:
+            type: string
+            default: view
+            enum: [view, embed, edit]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  title:
+                    type: object
+                    properties:
+                      rendered:
+                        type: string
+                  content:
+                    type: object
+                    properties:
+                      rendered:
+                        type: string
+

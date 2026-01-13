@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Spec Generator Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📘 API Spec Generator</h1>
+    <div class="steps">
+      <button onclick="runStep('static')">🔍 Run Static Extractor</button>
+      <button onclick="runStep('merge_openapi')">🔄 Merge with OpenAPI</button>
+      <button onclick="runStep('record_har')">🎥 Record HAR</button>
+      <button onclick="runStep('extract_har')">📊 Extract from HAR</button>
+      <button onclick="runStep('super_merge')">🧠 Smart Merge</button>
+    </div>
+    <pre id="output">Click a button to start...</pre>
+    <h3>📥 Download</h3>
+    <ul>
+      <li><a href="/download/static_routes_full.json" target="_blank">static_routes_full.json</a></li>
+      <li><a href="/download/merged_openapi.yaml" target="_blank">merged_openapi.yaml</a></li>
+      <li><a href="/download/full_har_openapi.yaml" target="_blank">full_har_openapi.yaml</a></li>
+      <li><a href="/download/full_har_endpoints.json" target="_blank">full_har_endpoints.json</a></li>
+      <li><a href="/download/merged_spec_smart.yaml" target="_blank">merged_spec_smart.yaml</a></li>
+    </ul>
+  </div>
+
+  <script>
+    async function runStep(step) {
+      document.getElementById('output').textContent = '⏳ Running ' + step + '...';
+      const response = await fetch('/run', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ step })
+      });
+      const data = await response.json();
+      if (data.success) {
+        document.getElementById('output').textContent = '✅ Success:\n' + data.output;
+      } else {
+        document.getElementById('output').textContent = '❌ Error:\n' + (data.output || data.error);
+      }
+    }
+  </script>
+</body>
+</html>

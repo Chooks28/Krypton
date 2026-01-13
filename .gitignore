@@ -1,0 +1,14 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Large capture files
+captures/
+*.har
+
+# Node / Playwright
+node_modules/
+
+# OS files
+.DS_Store
