@@ -701,6 +701,20 @@ php StaticRouteExtractor.php --help
 python record_wp_har.py --help
 
 ```
+## 👩‍🔬 Author & Research Context
+
+This project was designed and implemented by **Grace Ohiremen** as part of a Master’s research study in Computer Science & Engineering.
+
+**Primary contributions include:**
+- CMS-aware static analysis using PHP AST parsing
+- Dynamic API discovery via browser automation
+- Intelligent static–dynamic OpenAPI merging
+- Empirical analysis of specification inaccuracies in WordPress plugins
+- Security-focused interpretation of undocumented APIs
+
+The work supports ongoing research into improving the reliability of automatically generated API specifications.
+
+
 ---
 
 <div align="center"> <strong>Ready to discover your CMS's complete API surface?</strong><br> Start with the web dashboard for a guided experience or use command line for automation.<br> Get a complete OpenAPI specification in minutes, not days. </div><div align="center"> <sub>Built with ❤️ for CMS developers, security researchers, and API enthusiasts</sub> </div>
