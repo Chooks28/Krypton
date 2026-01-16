@@ -3,12 +3,20 @@ venv/
 __pycache__/
 *.pyc
 
-# Large capture files
+# HAR captures & generated files
 captures/
 *.har
 
-# Node / Playwright
-node_modules/
+# PHP dependencies
+vendor/
 
-# OS files
+# Logs & temp files
+*.log
+
+# OS
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
