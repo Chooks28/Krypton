@@ -29,7 +29,7 @@ class ClassMethodCollector extends NodeVisitorAbstract {
             }
         }
 
-        // ✅ Collect global functions (like wpcf7_register_rest_api)
+        //  Collect global functions (like wpcf7_register_rest_api)
         if ($node instanceof Node\Stmt\Function_) {
             if ($node->name !== null) {
                 $funcName = $node->name->name;
@@ -52,7 +52,7 @@ class ClassMethodCollector extends NodeVisitorAbstract {
         return $this->classes;
     }
 
-    // ✅ NEW: Return a global function node if collected
+    //  NEW: Return a global function node if collected
     public function getGlobalFunction(string $name): ?Node\Stmt\Function_ {
         return $this->globalFunctions[$name] ?? null;
     }                                                                   
