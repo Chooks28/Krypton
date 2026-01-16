@@ -33,7 +33,7 @@ class RouteVisitor extends NodeVisitorAbstract
         return $this->routes;
     }
 
-    // ❌ DO NOT declare this abstract — it's already defined in NodeVisitorAbstract
+    //  DO NOT declare this abstract — it's already defined in NodeVisitorAbstract
     public function enterNode(Node $node)
     {
         // Optionally provide a base implementation or leave it empty
